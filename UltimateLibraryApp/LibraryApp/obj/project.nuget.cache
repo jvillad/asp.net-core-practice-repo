@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fA7Vz5B9aVfVyDaUDMqKy7UVY/49j0gIySRrV1kMfC7iRPvEKM0wj+BLBU9+TYP77in8mzDYtcIgxYBa90Dy0w==",
+  "dgSpecHash": "OTG9+RHLUc87ML5Khrj++Ts4VBHUFIaPhY5wTfjbawAm1wN91BHhwSX6U8VC0eh/Ute2oKwCrcj4VJ18+wRmbA==",
   "success": true,
-  "projectFilePath": "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
+  "projectFilePath": "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

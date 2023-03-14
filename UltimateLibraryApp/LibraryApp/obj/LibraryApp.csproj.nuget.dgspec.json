@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/LibraryApp.csproj": {}
+    "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/LibraryApp.csproj": {}
   },
   "projects": {
-    "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/LibraryApp.csproj": {
+    "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/LibraryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
+        "projectUniqueName": "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
         "projectName": "LibraryApp",
-        "projectPath": "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
+        "projectPath": "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/LibraryApp.csproj",
         "packagesPath": "/Users/rio/.nuget/packages/",
-        "outputPath": "/Users/rio/RiderProjects/UltimateLibraryApp/LibraryApp/obj/",
+        "outputPath": "/Users/rio/Desktop/asp.net-core-practice-repo/UltimateLibraryApp/LibraryApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rio/.nuget/NuGet/NuGet.Config"
