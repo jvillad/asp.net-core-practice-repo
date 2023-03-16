@@ -20,3 +20,24 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card-bg {
+    padding: 150px 0;
+    position: relative;
+    background-image: url('../images/nsw_state_lib.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 100vw;
+    height: 450px;
+    max-height: auto;
+    background-position: center center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+}
+
+.svg {
+    height: 34px;
+    width: 34px;
+}
+
