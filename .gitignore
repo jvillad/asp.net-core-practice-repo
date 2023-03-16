@@ -150,6 +150,24 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp
+
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
