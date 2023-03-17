@@ -22,8 +22,7 @@ body {
 }
 
 .card-bg {
-    padding: 150px 0;
-    position: relative;
+    padding: 150px 0;    
     background-image: url('../images/nsw_state_lib.jpg');
     background-repeat: no-repeat;
     max-width: 100%;
@@ -41,3 +40,31 @@ body {
     width: 34px;
 }
 
+.custom-card-body {  
+    text-align: center;
+}
+
+.lib-header {
+    margin: 0 auto;
+    background: rgba(191,191,191,.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #1f2937;
+    font-size: 18px;
+    width: 700px;
+    max-width: 100%;
+    font-weight: 500;
+}
+@media (max-width: 450px) {
+    .lib-header {
+        font-size: 14px;
+        width: 700px;
+        max-width: 100%;
+    }
+}
+.card-img-top {
+   opacity: .5;
+}
+.card-img-top:hover{
+    opacity: 1;
+}
