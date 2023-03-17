@@ -179,3 +179,7 @@ wwwroot/lib
 wwwroot/dist
 wwwroot/css
 wwwroot/images
+/UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.assets.cache
+/UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.csproj.AssemblyReference.cache
+/UltimateLibraryApp/LibraryApp/obj/project.nuget.cache
+/UltimateLibraryApp/LibraryApp/obj/project.nuget.cache
