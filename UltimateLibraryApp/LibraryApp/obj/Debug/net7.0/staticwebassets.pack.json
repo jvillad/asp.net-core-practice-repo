@@ -13,8 +13,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\library-logo.png",
+      "PackagePath": "staticwebassets\\images\\library-logo.png"
+    },
+    {
       "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\nsw_state_lib.jpg",
       "PackagePath": "staticwebassets\\images\\nsw_state_lib.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\sydney.jpg",
+      "PackagePath": "staticwebassets\\images\\sydney.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\sydney_vwfnj1-Banner 169.jpg",
+      "PackagePath": "staticwebassets\\images\\sydney_vwfnj1-Banner 169.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\wollongong.jpg",
+      "PackagePath": "staticwebassets\\images\\wollongong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\images\\wollongong_emtqhi-Banner 169.jpg",
+      "PackagePath": "staticwebassets\\images\\wollongong_emtqhi-Banner 169.jpg"
     },
     {
       "Id": "C:\\Users\\jyvil\\OneDrive\\Desktop\\asp.net-core-practice-repo\\UltimateLibraryApp\\LibraryApp\\wwwroot\\js\\site.js",
