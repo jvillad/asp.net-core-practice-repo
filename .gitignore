@@ -206,3 +206,4 @@ wwwroot/images
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.pdb
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.GeneratedMSBuildEditorConfig.editorconfig
 *.config
+/UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/refint/LibraryApp.dll
