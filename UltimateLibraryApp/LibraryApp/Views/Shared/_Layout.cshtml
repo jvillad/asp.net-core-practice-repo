@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="~/BooksRental.styles.css" asp-append-version="true" />
 </head>
 <body>
-	<header>
+	<header class="pt-2">
 		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light
  box-shadow mb-3 container">
 			<div class="container-fluid">
-				<a class="navbar-brand d-flex " asp-area="" asp-controller="Home"  asp-action="Index">
+				<a class="navbar-brand d-flex " asp-area="" asp-controller="Home" asp-action="Index">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="svg">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
 					</svg>
@@ -27,13 +27,21 @@
 				<div class="navbar-collapse collapse d-sm-inline-flex justify-contentbetween">
 					<ul class="navbar-nav flex-grow-1 fw-bold">
 						<li class="nav-item">
-							<a class="nav-link " asp-area="" aspcontroller="Home" asp-action="Index">Home</a>
+							<a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " asp-area="" aspcontroller="Home" asp-action="Privacy">Privacy</a>
+							<a class="nav-link " asp-area="" asp-controller="Book"
+							   asp-action="Book">Book</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Genre"
+							   asp-action="Index">Genre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
 						</li>
 					</ul>
-					<partial name="_Login" />
+					@*<partial name="_LoginPartial" />*@
 				</div>
 			</div>
 		</nav>
