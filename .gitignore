@@ -174,3 +174,8 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/UltimateLibraryApp/LibraryApp/wwwroot/images
+wwwroot/lib 
+wwwroot/dist
+wwwroot/css
+wwwroot/images

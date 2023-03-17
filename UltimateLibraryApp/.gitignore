@@ -475,3 +475,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+wwwroot/lib 
+wwwroot/dist
+wwwroot/css
+wwwroot/images
