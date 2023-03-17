@@ -205,3 +205,4 @@ wwwroot/images
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/staticwebassets.build.json
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.pdb
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/LibraryApp.GeneratedMSBuildEditorConfig.editorconfig
+*.config
