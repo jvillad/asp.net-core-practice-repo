@@ -10,13 +10,13 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light 
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light
  box-shadow mb-3 container">
 			<div class="container-fluid">
-				<a class="navbar-brand d-flex " asp-area="" asp-controller="Home" aspaction="Index">
+				<a class="navbar-brand d-flex " asp-area="" asp-controller="Home"  asp-action="Index">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="svg">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-					</svg>			
+					</svg>
 					DreamTime
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,7 +25,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="navbar-collapse collapse d-sm-inline-flex justify-contentbetween">
-					<ul class="navbar-nav flex-grow-1">
+					<ul class="navbar-nav flex-grow-1 fw-bold">
 						<li class="nav-item">
 							<a class="nav-link " asp-area="" aspcontroller="Home" asp-action="Index">Home</a>
 						</li>
@@ -33,7 +33,7 @@
 							<a class="nav-link " asp-area="" aspcontroller="Home" asp-action="Privacy">Privacy</a>
 						</li>
 					</ul>
-					@* <partial name="_LoginPartial" /> *@
+					<partial name="_Login" />
 				</div>
 			</div>
 		</nav>
@@ -43,7 +43,7 @@
 			@RenderBody()
 		</main>
 	</div>
-	<footer class="footer text-muted pt-lg-5 fixed-bottom">
+	<footer class="footer text-muted pt-lg-5">
 		<div class="container">
 			<hr>
 			&copy; 2022 - BooksRental - <a asp-area="" asp-controller="Home" aspaction="Privacy">Privacy</a>
