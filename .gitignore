@@ -208,3 +208,4 @@ wwwroot/images
 *.config
 /UltimateLibraryApp/LibraryApp/obj/Debug/net7.0/refint/LibraryApp.dll
 /OlygariaPieShop/.vs/OlygariaPieShop/DesignTimeBuild/.dtbcache.v2
+/OlygariaPieShop/OlygariaPieShop/wwwroot/Images
