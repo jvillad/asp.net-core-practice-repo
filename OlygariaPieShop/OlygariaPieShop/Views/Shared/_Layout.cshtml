@@ -3,10 +3,39 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width" />
-	<title>@ViewBag.Tittle</title>
+	<title>Olygarias Pie Shop</title>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+	<script src="~/lib/jquery/jquery.js"></script>
+	<script src="~/lib/bootstrap/js/bootstrap.js"></script>
+	<link href="~/css/site.css" rel="stylesheet" />
+	<base href="/" />
 </head>
 <body>
-	<div>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
+				 aria-label="Olygaria's Pie Shop navigation header">
+				<div class="container-xl">
+					<a class="navbar-brand">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="1.5" stroke="currentColor" class="svg-pie">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+						</svg>
+
+					</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+							aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 		@RenderBody()
 	</div>
 </body>
