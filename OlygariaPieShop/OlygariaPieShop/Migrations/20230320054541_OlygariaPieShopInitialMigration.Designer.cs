@@ -11,8 +11,8 @@ using OlygariaPieShop.Models;
 namespace OlygariaPieShop.Migrations
 {
     [DbContext(typeof(OlygariaPieShopDbContext))]
-    [Migration("20230319121902_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230320054541_OlygariaPieShopInitialMigration")]
+    partial class OlygariaPieShopInitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

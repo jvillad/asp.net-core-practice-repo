@@ -5,7 +5,7 @@
 namespace OlygariaPieShop.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class OlygariaPieShopInitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
