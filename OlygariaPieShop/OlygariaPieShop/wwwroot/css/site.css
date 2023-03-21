@@ -6,7 +6,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0d6efd;
+    --darkgray: #333333;
+    --softyellow: #F8DDA4;
+    --softpurp: #E9D9F3;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -4120,7 +4122,7 @@ textarea.form-control-lg {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #C87D52;
+    color: var(--darkgray);
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -11870,4 +11872,13 @@ h6, .h6 {
 
 .form-label {
     text-transform: uppercase;
+}
+
+
+.bg-softpurp {
+    background-color: var(--softpurp);
+    color: var(--darkgray);
+}
+.shop-cart {
+    color: red;
 }
