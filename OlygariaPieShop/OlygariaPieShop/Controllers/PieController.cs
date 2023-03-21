@@ -15,13 +15,41 @@ namespace OlygariaPieShop.Controllers
 			_categoryRepository = categoryRepository;
 		}
 
-		public IActionResult List()
+		/*	public IActionResult List()
+			{
+
+				PieListViewModel pieListViewModel = new PieListViewModel
+					(_pieRepository.AllPies, "All Our Pies");
+				return View(pieListViewModel);
+			}
+	*/
+		public ViewResult List(string category)
 		{
-			/*ViewBag.CurrentCategory = "Cheese Cakes";
-			return View(_pieRepository.AllPies);*/
-			PieListViewModel pieListViewModel = new PieListViewModel
-				(_pieRepository.AllPies, "Cheese Cakes");
-			return View(pieListViewModel);
+			IEnumerable<Pie> pies;
+			string? currentCategory;
+
+			if (string.IsNullOrEmpty(category))
+			{
+				pies = _pieRepository.AllPies.OrderBy(p => p.Id);
+				currentCategory = "All pies";
+			}
+			else
+			{
+				pies = _pieRepository.AllPies.Where(p => p.Category.CategoryName == category)
+					.OrderBy(p => p.Id);
+				currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
+			}
+
+			return View(new PieListViewModel(pies, currentCategory));
+		}
+		public IActionResult Details(int id)
+		{
+			var pie = _pieRepository.GetPieById(id);
+			if (pie == null)
+				return NotFound();
+			return View(pie);
+
+
 		}
 	}
 }
