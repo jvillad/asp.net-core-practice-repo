@@ -13,7 +13,7 @@ builder.Services.AddHttpContextAccessor();
 
 // will make sure that application knows about ASP.Net Core MVC
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRazorPages();
 builder.Services.AddDbContext<OlygariaPieShopDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration["ConnectionStrings:AppDbContextConnection"]);
@@ -40,6 +40,7 @@ app.MapDefaultControllerRoute();
 /*app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");*/
+app.MapRazorPages();
 
 // seeding db
 DbSeedData.Seed(app);
