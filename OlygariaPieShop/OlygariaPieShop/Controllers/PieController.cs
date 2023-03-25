@@ -49,7 +49,10 @@ namespace OlygariaPieShop.Controllers
 				return NotFound();
 			return View(pie);
 
-
+		}
+		public IActionResult Search()
+		{
+			return View();
 		}
 	}
 }
