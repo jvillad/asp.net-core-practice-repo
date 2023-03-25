@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OlygariaPieShop.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +12,22 @@ builder.Services.AddScoped<IShoppingCart, ShoppingCart>(sp => ShoppingCart.GetCa
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 
-// will make sure that application knows about ASP.Net Core MVC
-builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllersWithViews().AddJsonOptions(options =>
+{
+	options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
+
 builder.Services.AddRazorPages();
+
+// will make sure that application knows about ASP.Net Core MVC
 builder.Services.AddDbContext<OlygariaPieShopDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration["ConnectionStrings:AppDbContextConnection"]);
 });
+
+// controller for API
+//builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -41,6 +51,9 @@ app.MapDefaultControllerRoute();
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");*/
 app.MapRazorPages();
+
+// routing to build an API
+app.MapControllers();
 
 // seeding db
 DbSeedData.Seed(app);
