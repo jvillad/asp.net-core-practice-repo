@@ -28,5 +28,10 @@ namespace OlygariaPieShop.Models
 		{
 			return _context.Pies.FirstOrDefault(p => p.Id == pieId);
 		}
+
+		public IEnumerable<Pie> SearchPies(string searchQuery)
+		{
+			return _context.Pies.Where(p => p.Name.Contains(searchQuery));
+		}
 	}
 }
