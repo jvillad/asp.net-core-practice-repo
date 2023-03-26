@@ -36,7 +36,7 @@ var app = builder.Build();
 app.UseStaticFiles();
 
 app.UseSession();
-
+app.UseAuthentication();
 // middleware component
 // show errors
 if (app.Environment.IsDevelopment())
