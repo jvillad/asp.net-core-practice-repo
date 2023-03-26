@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace OlygariaPieShop.Models
 {
-	public class OlygariaPieShopDbContext : DbContext
+	public class OlygariaPieShopDbContext : IdentityDbContext
 	{
 		public OlygariaPieShopDbContext(DbContextOptions<OlygariaPieShopDbContext> dbContext) : base(dbContext)
 		{
