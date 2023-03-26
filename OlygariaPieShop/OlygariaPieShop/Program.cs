@@ -26,8 +26,7 @@ builder.Services.AddDbContext<OlygariaPieShopDbContext>(options =>
 	options.UseSqlServer(builder.Configuration["ConnectionStrings:AppDbContextConnection"]);
 });
 
-// controller for API
-//builder.Services.AddControllers();
+builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
@@ -51,6 +50,9 @@ app.MapDefaultControllerRoute();
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");*/
 app.MapRazorPages();
+
+app.MapBlazorHub();
+app.MapFallbackToPage("/app/{*catchall}", "/App/Index");
 
 // routing to build an API
 app.MapControllers();
