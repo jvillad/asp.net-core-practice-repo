@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OlygariaPieShop.Models;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IPieRepository, PieRepository>();
@@ -26,17 +28,20 @@ builder.Services.AddDbContext<OlygariaPieShopDbContext>(options =>
 	options.UseSqlServer(builder.Configuration["ConnectionStrings:AppDbContextConnection"]);
 });
 
+/*builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)*/
+builder.Services.AddDefaultIdentity<IdentityUser>()
+	.AddEntityFrameworkStores<OlygariaPieShopDbContext>();
+
 builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
-
 // middleware component
 // files from wwwroot
 app.UseStaticFiles();
-
 app.UseSession();
 app.UseAuthentication();
+app.UseAuthorization();
 // middleware component
 // show errors
 if (app.Environment.IsDevelopment())
