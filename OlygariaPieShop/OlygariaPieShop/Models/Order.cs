@@ -37,6 +37,7 @@ namespace OlygariaPieShop.Models
 		[Required(ErrorMessage = "Enter your city")]
 		[StringLength(50)]
 		public string City { get; set; } = string.Empty;
+
 		[StringLength(10)]
 		public string? State { get; set; }
 
